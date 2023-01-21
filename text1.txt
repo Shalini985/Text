@@ -1,0 +1,195 @@
+Collection is framework
+Collection is a unified Architure is consites of class and interface
+
+types of collection
+
+*List
+*set
+*sortedset
+*Queue
+list is a 2 types
+*ArrayList
+*Linked list
+
+set 2 types
+
+*linked hash set
+*hast set
+
+sortedset set 
+
+*tree set
+
+Queue 
+
+*linked list
+
+
+main interface
+
+list
+*it is a order
+*it is index based
+*it is accept the duplicate values
+*possitional
+
+set
+*it is a unorder
+*it is not index based
+*it is not accept the duplicate values
+* no possitional
+
+
+ArrayList
+*is use intrnally arrays
+*faster than read operation
+*slower than write opration
+
+LinkedList
+*is use intrnally nodes
+*faster than write operation
+*slower than read opration
+
+2.     hashmap                                                                                         hashset
+1.Hashmap is the implementation of Map interface.       	                      *  Hashset on other hand is the implementation of set interface.
+2	Internal implementation
+	Hashmap internally do not implements hashset or
+	any set for its implementation.	                                            * Hashset internally uses Hashmap for its implementation.
+3	Storage of elements	HashMap 
+    Stores elements in form of key-value pair i.e each element
+	has its corresponding
+	key which is required for its retrieval during iteration.	            * HashSet stores only objects no such key value pairs maintained.
+4	Method to add element	Put method of hash map is 
+used to add element in hashmap.	                                        * On other hand add method of hashset is used to add element in hashset.
+5	Index performance	Hashmap due to its unique key is faster 
+in retrieval of element during its iteration.	                         *HashSet is completely based on object so compared to hashmap is slower.
+6	Null Allowed	Single null key and any number of null value can be 
+inserted in hashmap without any restriction.	                         * On other hand Hashset allows only one null value in its collection,after which no null value is allowed to be added.
+ 
+
+
+
+3.                   Hash set                                             Tree Set
+
+1	The Hash set is executed with the help of a HashTable.	*The tree set is executed with the help of a tree structure.
+2	It does not authorise a heterogeneous object.	       *It authorises a heterogeneous object.
+3	It permits a null object.	                           *It does not permit the null object.
+4	To compare two objects, we use the equals method.	   *To compare two objects, we use the compare method.
+5	It does not support any order                       	*TreeSet supports an object in sorted order.
+
+
+
+
+4. By  array and linked set hashmap implemented i java
+*By  get and put opration its use hascode and equal method
+
+
+5.
+Fail-fast and Fail-safe are the iterators or collections in Java. 
+Java SE specification doesn't use the Fail-safe term.
+ We use the Fail-safe to segregate between the Non-Fail-fast and Fail-fast iterators.
+ The Fail-Fast system terminates the operation as-fast-as-possible that are exposing failures and stop the entire operation.
+ Whereas, Fail-Safe system doesn't terminate the operation that are exposing failures. 
+ The Fail-safe system tries to avoid raising Failures as much as possible.
+
+6.
+
+
+
+
+7.The Spliterator interface, introduced in Java 8, can be used for traversing and partitioning sequences.
+8.List of string manipulation subroutines
+Locate a character position within a string.
+Locate a sequence of characters within a string.
+Copy a string.
+Concatenate strings.
+Compare strings.
+Translate a string.
+Measure a string.
+9.Core (spring-core) is the core of the framework that power features such as Inversion of Control and dependency injection.
+
+10.Dependency Injection is a fundamental aspect of the Spring framework,
+ through which the Spring container “injects” objects into other objects or “dependencies”. 
+Simply put, this allows for loose coupling of components and moves the responsibility of managing components onto the container.
+
+
+11.
+In Spring Boot, we can use Spring Framework to define our beans and their dependency injection.
+ The @ComponentScan annotation is used to find beans and the corresponding injected with @Autowired annotation. 
+If you followed the Spring Boot typical layout, no need to specify any arguments for @ComponentScan annotation.
+12.Yes
+
+13.	StringBuffer	                                                                StringBuilder
+1)	StringBuffer is synchronized i.e. thread safe.         
+It means two threads can't call the methods of StringBuffer simultaneously.
+	                                                                          StringBuilder is non-synchronized i.e. not thread safe. 
+																			  It means two threads can call the methods of StringBuilder simultaneously.
+2)	StringBuffer is less efficient than StringBuilder.	                              StringBuilder is more efficient than StringBuffer.
+3)	StringBuffer was introduced in Java 1.0	                                     StringBuilder was introduced in Java 1.5
+
+14.              beanfactory                                                                           application contaxt
+It is a fundamental container that provides the basic functionality for managing beans. 	It is an advanced container that extends the BeanFactory that provides all basic functionality and adds some advanced features.
+It is suitable to build standalone applications.	                                       It is suitable to build Web applications, integration with AOP modules, ORM and distributed applications.
+It supports only Singleton and Prototype bean scopes.	                                   It supports all types of bean scopes such as Singleton, Prototype, Request, Session etc.
+It does not support Annotations. In Bean Autowiring, 
+we need to configure the properties in XML file only.	                                    It supports Annotation based configuration in Bean Autowiring.
+This interface does not provides messaging 
+(i18n or internationalization) functionality.	
+ApplicationContext interface extends MessageSource interface,
+ thus it provides messaging (i18n or internationalization) functionality.
+BeanFactory does not support Event publication functionality.	                              Event handling in the ApplicationContext is provided through the ApplicationEvent class and ApplicationListener interface.
+
+15
+spring AOP Aspect Oriented Programming (AOP) compliments OOPs in the sense that it also provides modularity
+. But the key unit of modularity is aspect than class.
+*Spring IoC is the mechanism to achieve loose-coupling between Objects dependencies. 
+*POJO is short for Plain old java object, an application implemented in pojo way means the logic resides in POJO with little to no boilerplate code, thus it's very portable. 
+An PoJo application can be ported from Spring to another container with little modification.
+
+16.
+public class country{
+public static void main(string args[]]){
+map<String,Intger> map=new TreeMap<String,Intger>();
+map.put("India",53);
+map.put("china",54);
+map.forEach(m)->System.out.println(n=""+n);
+map.forEach(n)->if(n.contains("india")){
+System.out.println(n);
+}
+}
+}
+
+17.*maven:allows package executed jar
+*grade: it build tool
+*tomacat:used for building web applications
+*quarkus:optimizes java
+*sonarqube:used to detect bugs
+*server:used to run user applications
+
+20.
+import java.util.*;
+
+  public class Exercise13 {
+  public static void main(String[] args) {
+    
+     LinkedList<String> l_list = new LinkedList<String>();
+   
+          l_list.add("Red");
+          l_list.add("Green");
+          l_list.add("Black");
+          l_list.add("Pink");
+          l_list.add("orange");
+      
+     
+   System.out.println("The Original linked list: " + l_list);
+
+ 
+    Object firstElement = l_list.removeFirst();
+    System.out.println("Element removed: "+ firstElement);
+ 
+
+    Object lastElement = l_list.removeLast();
+    System.out.println("Element removed: "+ lastElement);
+    System.out.println("The New linked list: " + l_list);
+  }
+}
